@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-	
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agricultural Machinery</title>
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
         }
 
         body {
@@ -47,7 +47,6 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
         }
 
         nav a:hover {
@@ -56,11 +55,12 @@
 
         .container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: auto;
             padding: 2rem;
         }
 
-        .content {
+        .content,
+        .contact-form {
             background-color: white;
             padding: 2rem;
             border-radius: 8px;
@@ -68,8 +68,9 @@
             margin-bottom: 2rem;
         }
 
-        h1, h2, h3 {
-            color: #000000;
+        h1,
+        h2,
+        h3 {
             margin-bottom: 1rem;
         }
 
@@ -85,30 +86,20 @@
             margin: 1.5rem 0;
         }
 
-        .contact-form {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
         label {
-            display: block;
-            margin-bottom: 0.5rem;
             font-weight: bold;
             color: #1e3c72;
+            display: block;
+            margin-bottom: 0.5rem;
         }
 
-        input, textarea {
+        input,
+        textarea {
             width: 100%;
             padding: 0.75rem;
+            margin-bottom: 1rem;
             border: 1px solid #ccc;
             border-radius: 4px;
-            font-size: 1rem;
         }
 
         button {
@@ -118,8 +109,6 @@
             padding: 0.75rem 1.5rem;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
         }
 
         button:hover {
@@ -131,7 +120,6 @@
             color: white;
             padding: 2rem;
             text-align: center;
-            margin-top: 2rem;
         }
 
         .cookie-consent {
@@ -148,153 +136,127 @@
             z-index: 1000;
         }
 
-        .cookie-consent button {
-            background-color: white;
-            color: #1e3c72;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            cursor: pointer;
+        /* ✅ WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            transition: transform 0.2s ease;
         }
 
-        .contact-info {
-            background-color: #e6f2ff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-top: 2rem;
+        .whatsapp-float:hover {
+            transform: scale(1.1);
         }
 
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
-                align-items: center;
-            }
-
-            nav li {
-                margin: 0.5rem 0;
             }
         }
     </style>
 </head>
+
 <body>
-<header>
-    <h1>Agricultural Machinery</h1>
-    <p>Modern equipment for efficient agriculture</p>
-</header>
 
-<nav>
-    <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#equipment">Machinery</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contacts</a></li>
-    </ul>
-</nav>
+    <header>
+        <h1>Agricultural Machinery</h1>
+        <p>Modern equipment for efficient agriculture</p>
+    </header>
 
-<div class="container">
-    <div class="content">
-        <h2 id="about">Modern Agricultural Machinery</h2>
-        <p>Agricultural machinery plays a key role in the modern agro-industrial complex. It significantly increases labor productivity, reduces work time, and minimizes dependence on the human factor. With the growing global population and increasing food demand, the efficient use of agricultural machinery is not just an advantage but a necessity.</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#equipment">Machinery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </nav>
 
-        <div class="highlight">
-            <h3>Evolution of Agricultural Machinery</h3>
-            <p>The history of agricultural machinery spans thousands of years. From simple hand tools of ancient times to modern smart combines with autonomous control systems — the path of technological development is impressive. In the 19th century, the emergence of steam engines marked the beginning of agricultural mechanization, and in the 20th century, diesel and gasoline engines revolutionized the agro-industrial sector.</p>
+    <div class="container">
+        <div class="content">
+            <h2 id="about">Modern Agricultural Machinery</h2>
+            <p>Agricultural machinery plays a key role in modern farming by improving efficiency and reducing labor
+                costs.</p>
+
+            <div class="highlight">
+                <h3>Evolution of Machinery</h3>
+                <p>From manual tools to GPS-enabled autonomous tractors, agriculture has transformed rapidly.</p>
+            </div>
+
+            <h3 id="equipment">Types of Machinery</h3>
+            <p><strong>Tractors, Harvesters, Sprayers, Seeders</strong> — all optimized for productivity.</p>
+
+            <h3 id="services">Maintenance & Service</h3>
+            <p>Regular servicing ensures long equipment life and optimal performance.</p>
         </div>
 
-        <p>Today, agricultural machinery consists of complex technological systems equipped with GPS navigation, yield sensors, automatic control systems, and telematics. These technologies allow farmers to precisely apply fertilizers and crop protection products, optimize machine routes, and collect detailed analytics for each field area.</p>
+        <div class="contact-form">
+            <h2 id="contact">Feedback Form</h2>
+            <form id="feedbackForm">
+                <label>Your Name</label>
+                <input type="text" required>
 
-        <h3 id="equipment">Main Types of Agricultural Machinery</h3>
-        <p>The modern agricultural machinery fleet includes many specialized machines, each performing specific functions in the agricultural production chain.</p>
+                <label>Email</label>
+                <input type="email" required>
 
-        <p><strong>Tractors</strong> are universal power units used for plowing, harrowing, sowing, transportation, and driving stationary equipment. Modern tractors feature computerized controls, cabin climate control, and automatic transmissions.</p>
+                <label>Message</label>
+                <textarea rows="4" required></textarea>
 
-        <p><strong>Harvesters</strong> are complex machines designed to perform multiple operations simultaneously: cutting, threshing, cleaning, and grain loading. There are grain, forage, sugar beet, and other specialized harvesters. Modern models use precision farming systems to create yield maps and optimize resource usage.</p>
-
-        <p><strong>Sowing complexes</strong> are machines for precise seed placement with simultaneous fertilizer application. Modern seeders ensure uniform seed distribution at a specified depth with accurate row spacing. Precision systems allow different crops or varieties to be sown in one field according to soil fertility maps.</p>
-
-        <p><strong>Sprayers</strong> are machines for applying liquid crop protection products. Modern sprayers feature systems that prevent drift caused by wind and precise dosers that adjust application rates based on speed and plant requirements.</p>
-
-        <p><strong>Forage harvesting equipment</strong> includes mowers, rakes, balers, and forage harvesters. This machinery mechanizes hay, silage, and forage harvesting while preserving nutritional value.</p>
-
-        <div class="highlight">
-            <h3>Trends in Agricultural Machinery Development</h3>
-            <p>Modern agricultural machinery is evolving toward greater efficiency, environmental friendliness, and automation. More manufacturers are introducing electric and hybrid power systems, reducing emissions and dependence on fossil fuels. Precision farming technologies continue to develop, optimizing resource usage by considering soil variability.</p>
-        </div>
-
-        <p>Autonomous control systems are becoming increasingly common. Today, there are tractors and harvesters capable of operating without an operator in the cabin. These machines use GPS, lidar, cameras, and sensors for navigation and task execution. Full autonomy is a matter of the near future.</p>
-
-        <p>Another major trend is the integration of Internet of Things (IoT) technologies. Agricultural machinery increasingly uses sensors and telematics to transmit data on machine performance, fuel consumption, yield, and other parameters to centralized systems, enabling data-driven decisions.</p>
-
-        <h3 id="services">Maintenance and Repair</h3>
-        <p>Technical maintenance is crucial for ensuring uninterrupted operation throughout the season. Regular maintenance includes oil and filter replacement, cooling and hydraulic system checks, and equipment adjustment. Timely servicing extends machinery lifespan and prevents costly breakdowns during peak periods.</p>
-
-        <p>Manufacturers offer service contracts that include scheduled maintenance, emergency repairs, and spare parts supply. These contracts help farmers plan costs and minimize downtime.</p>
-
-        <p>Remote diagnostics and augmented reality technologies are increasingly used. Service specialists can remotely diagnose machinery and assist operators with repairs using AR instructions.</p>
-
-        <p>In Belarus, with its specific soil and climate conditions, adapting machinery to local environments is especially important. Manufacturers and dealers offer special machine modifications suitable for heavy soils and high moisture conditions.</p>
-
-        <p>The development of agricultural machinery continues to accelerate due to digital technologies and increasing demands for efficiency and environmental sustainability. Investments in modern machinery are a key factor in agricultural competitiveness in global markets.</p>
-    </div>
-
-    <div class="contact-form">
-        <h2 id="contact">Feedback Form</h2>
-        <form id="feedbackForm">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-
-            <button type="submit">Send Message</button>
-        </form>
-
-        <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p><strong>Address:</strong> Minsk, Tractor Street, 15, Office 304, 220073, Belarus</p>
-            <p><strong>Phone:</strong> +375 (29) 123-45-67</p>
-            <p><strong>Email:</strong> info@agrotech.by</p>
-            <p><strong>Working Hours:</strong> Mon–Fri: 9:00–18:00, Sat: 10:00–15:00</p>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </div>
-</div>
 
-<footer>
-    <p>© 2023 Agricultural Machinery. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>© 2023 Agricultural Machinery. All rights reserved.</p>
+    </footer>
 
-<div class="cookie-consent" id="cookieConsent">
-    <div>
-        <p>We use cookies to improve website performance. By continuing to use the site, you agree to this.</p>
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <p>We use cookies to improve website performance.</p>
+        <button id="acceptCookies">Accept</button>
     </div>
-    <button id="acceptCookies">Accept</button>
-</div>
 
-<script>
-    document.getElementById('acceptCookies').addEventListener('click', function () {
-        document.getElementById('cookieConsent').style.display = 'none';
-        document.cookie = "cookieConsent=true; max-age=2592000; path=/";
-    });
+    <!-- ✅ WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=918766212530" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <title>Whatsapp-color</title>
+                <desc>Created with Sketch.</desc>
+                <defs> </defs>
+                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#67C15E">
+                        <path
+                            d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z"
+                            id="Whatsapp"> </path>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </a>
 
-    document.getElementById('feedbackForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('Thank you for your message! We will contact you shortly.');
-        this.reset();
-    });
-</script>
+    <script>
+        document.getElementById('acceptCookies').onclick = () => {
+            document.getElementById('cookieConsent').style.display = 'none';
+        };
+
+        document.getElementById('feedbackForm').onsubmit = e => {
+            e.preventDefault();
+            alert('Thank you! We will contact you soon.');
+            e.target.reset();
+        };
+    </script>
+
 </body>
+
 </html>
