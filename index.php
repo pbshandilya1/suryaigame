@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <script defer data-domain="oyster-app-zd9ml.ondigitalocean.app/NewYuk"
+        src="https://api.publytics.net/js/script.manual.min.js"></script>
+    <script>
+        window.publytics = window.publytics || function () { (window.publytics.q = window.publytics.q || []).push(arguments) };
+        publytics('pageview');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agricultural Machinery</title>
@@ -51,6 +57,14 @@
 
         nav a:hover {
             color: #a8d0ff;
+        }
+
+        .wp-btn {
+            background-color: #68c15e;
+            padding: 0.8rem 2rem;
+            border-radius: 7px;
+            color: white;
+            text-decoration: none;
         }
 
         .container {
@@ -195,6 +209,9 @@
 
             <h3 id="services">Maintenance & Service</h3>
             <p>Regular servicing ensures long equipment life and optimal performance.</p>
+            <a class="wp-btn" href="https://api.whatsapp.com/send?phone=918766212530">
+                Get ID
+            </a>
         </div>
 
         <div class="contact-form">
@@ -210,12 +227,15 @@
                 <textarea rows="4" required></textarea>
 
                 <button type="submit">Send Message</button>
+                            <a class="wp-btn" href="https://api.whatsapp.com/send?phone=918766212530">
+                Get ID
+            </a>
             </form>
         </div>
     </div>
 
     <footer>
-        <p>© 2023 Agricultural Machinery. All rights reserved.</p>
+        <p>©️ 2023 Agricultural Machinery. All rights reserved.</p>
     </footer>
 
     <!-- Cookie Consent -->
@@ -225,7 +245,8 @@
     </div>
 
     <!-- ✅ WhatsApp Button -->
-    <a href="https://api.whatsapp.com/send?phone=918766212530" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <a href="https://api.whatsapp.com/send?phone=918766212530" target="_blank" class="whatsapp-float"
+        aria-label="Chat on WhatsApp">
         <svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
