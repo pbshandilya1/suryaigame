@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <script defer data-domain="oyster-app-zd9ml.ondigitalocean.app/NewYuk"
-        src="https://api.publytics.net/js/script.manual.min.js"></script>
-    <script>
-        window.publytics = window.publytics || function () { (window.publytics.q = window.publytics.q || []).push(arguments) };
-        publytics('pageview');
-    </script>
+   <script defer data-domain="starfish-app-gom45.ondigitalocean.app/0lMwQr" src="https://api.publytics.net/js/script.manual.min.js"></script>
+   <script>
+       window.publytics = window.publytics || function() { (window.publytics.q = window.publytics.q || []).push(arguments) };
+       publytics('pageview');
+   </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agricultural Machinery</title>
